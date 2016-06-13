@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.brylkowski.mahumito.mahumito.activities.BeaconDetailsActivity"
+    tools:showIn="@layout/activity_beacon_details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Medium Text"
+            android:id="@+id/nextGoal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Medium Text"
+            android:id="@+id/furtherGoal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Medium Text"
+            android:id="@+id/finalGoal"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Give beacon"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:id="@+id/button_give"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Target accomplished"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:id="@+id/button_target"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/large_text"
+            android:id="@+id/description"/>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

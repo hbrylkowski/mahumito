@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout         xmlns:android="http://schemas.android.com/apk/res/android"
+                      xmlns:app="http://schemas.android.com/apk/res-auto"
+                      xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+    android:orientation="vertical"
+    >
+    <com.brylkowski.mahumito.mahumito.MyScroll
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                                                android:id="@+id/card_view"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="160dp"
+                                                android:layout_gravity="center"
+                                                android:layout_marginBottom="@dimen/md_keylines"
+                                                android:layout_marginTop="@dimen/md_keylines"
+                                                android:layout_marginLeft="@dimen/md_keylines"
+                                                android:layout_marginRight="@dimen/md_keylines">
+
+
+                <fragment android:name="com.brylkowski.mahumito.mahumito.fragments.MapsFragment"
+                      android:id="@+id/some_new_fragment"
+                      tools:context="com.brylkowski.mahumito.mahumito.fragments.MapsFragment"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                    />
+            </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:name="com.brylkowski.mahumito.mahumito.fragments.NearbyFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="LinearLayoutManager"
+        tools:context="com.brylkowski.mahumito.mahumito.fragments.NearbyFragment"
+        tools:listitem="@layout/fragment_nearby"/>
+        </LinearLayout>
+    </com.brylkowski.mahumito.mahumito.MyScroll>
+
+</LinearLayout>
